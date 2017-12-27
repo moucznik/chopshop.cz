@@ -1,0 +1,15 @@
+{
+  "name": "chopshop",
+  "version": "1.0.0",
+  "description": "Landing page for a chopshop in Brno",
+  "main": "index.hmtl",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "chopshop"
+  ],
+  "author": "Jiri Mouka, Ondrej Janosik",
+  "license": "ISC",
+  "devDependencies": {}
+}
