@@ -4,12 +4,16 @@
   "description": "Landing page for a chopshop in Brno",
   "main": "index.hmtl",
   "scripts": {
-    "test": "test"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "keywords": [
     "chopshop"
   ],
   "author": "Jiri Mouka, Ondrej Janosik",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.7.2"
+  },
+  "dependencies": {}
 }
