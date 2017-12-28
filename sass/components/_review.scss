@@ -1,0 +1,45 @@
+@import '../abstract/_variables.scss';
+
+.reviews {
+    width: $base-width;
+    min-width: $min-width;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title {
+        margin: 7.5rem 0 8rem 0;
+        font-size: 3rem;
+        color: $color-section-title-dark;
+        font-weight: 600;
+    }
+
+    &__review {
+        display: flex;
+
+        &__quote {
+            width: 5rem;
+            height: 4rem;
+            display: block;
+        }
+
+        &__quote--first {
+            align-self: flex-start;
+        }
+
+        &__quote--last {
+            align-self: flex-end;
+        }
+
+        &__text {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+
+    &__name {
+        margin: 4rem 0 11rem 0;
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+}

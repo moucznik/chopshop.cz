@@ -7,7 +7,7 @@
     padding: 10rem 0 15rem 0;
 
     &__items {
-        width: 28rem;
+        width: $min-width;
         margin: 0 auto;
 
         &__item {
