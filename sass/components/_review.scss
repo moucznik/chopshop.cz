@@ -1,7 +1,7 @@
 @import '../abstract/_variables.scss';
 
 .reviews {
-    width: $base-width;
+    max-width: $base-width;
     min-width: $min-width;
     text-align: center;
     margin: 0 auto;
