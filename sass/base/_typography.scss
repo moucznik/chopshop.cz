@@ -4,22 +4,3 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
-
-h1 {
-    font-weight: 700;
-    font-size: 4.2rem;
-    text-align: center;
-    color: $color-text-darker;
-    @media (max-width: $breakpoint-extra-small) {
-        font-size: 3rem;
-    }
-}
-
-p {
-    font-weight: 400;
-    font-size: 1.7rem;
-}
-
-.text__center {
-    text-align: center;
-}
