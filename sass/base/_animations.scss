@@ -1,0 +1,19 @@
+.animate__from__bottom {
+    animation-name: appearFromBottom;
+    animation-timing-function: ease-out;
+    animation-duration: 1.6s;
+}
+
+@keyframes appearFromBottom {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
