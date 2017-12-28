@@ -1,6 +1,16 @@
+// colors
+$background-light: #e8e8e8;
 $color-text-invert: white;
 $color-footer-background: black;
-$color-section-title-dark: rgb(66,65,66);
+$color-primary: #410000;
+$color-text-darker: #222222;
 
+//page widths
 $min-width: 28rem;
 $base-width: 48rem;
+
+//breakpoints
+$breakpoint-large: 1250px;
+$breakpoint-medium: 800px;
+$breakpoint-small: 450px;
+$breakpoint-extra-small: 350px;

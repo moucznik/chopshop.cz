@@ -1,0 +1,61 @@
+        @import "../abstract/_variables.scss";
+        .hero {
+            min-height: 35rem;
+            padding: 1rem 0 0 0;
+            background-color: $background-light;
+            display: flex;
+            flex-direction: row;
+            &__image {
+                display: flex;
+                align-content: flex-end;
+                align-items: flex-end;
+                overflow: hidden;
+                flex: 1;
+                img {
+                    max-width: 59rem;
+                    width: 100%;
+                    align-content: flex-end;
+                    align-items: flex-end;
+                }
+            }
+            &__text {
+                display: flex;
+                flex: 1;
+                padding-top: 6rem;
+                &__box {
+                    margin: auto;
+                    max-width: 37rem;
+                    padding-right: 18rem;
+                    p {
+                        line-height: 2.5rem;
+                    }
+                    &__button {
+                        margin: 4rem auto;
+                    }
+                }
+            }
+            @media (max-width: $breakpoint-large) {
+                .hero {
+                    &__text {
+                        padding: 0;
+                        &__box {
+                            padding: 0rem;
+                        }
+                    }
+                }
+            }
+            @media (max-width: $breakpoint-medium) {
+                .hero {
+                    &__image {
+                        display: none;
+                    }
+                    &__text {
+                        margin-bottom: 5rem;
+                        &__box {
+                            padding-top: 2rem;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
