@@ -1,8 +1,9 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // changes the ratio of the site 62,5% => 10px = 1rem
 }
 
 .container {
-    max-width: 100rem;
-    background-color: red;
+    max-width: 123rem; // 10px = 1rem
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
