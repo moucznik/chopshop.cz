@@ -1,0 +1,26 @@
+@mixin text-basic {
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
+@mixin text-center {
+    text-align: center;
+}
+
+@mixin main-title {
+    font-weight: 700;
+    font-size: 4.2rem;
+    text-align: center;
+    color: $color-text-darker;
+    @media (max-width: $breakpoint-extra-small) {
+        font-size: 3rem;
+    }
+}
+
+@mixin section-title {  
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2.6rem;
+    color: $color-section-title-dark;
+    font-weight: 700;
+}

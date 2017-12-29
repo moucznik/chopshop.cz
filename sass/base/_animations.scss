@@ -1,10 +1,10 @@
-.animate__from__bottom {
-    animation-name: appearFromBottom;
+.animate-from-bottom {
+    animation-name: appear-from-bottom;
     animation-timing-function: ease-out;
     animation-duration: 1.6s;
 }
 
-@keyframes appearFromBottom {
+@keyframes appear-from-bottom {
     0% {
         opacity: 0;
     }
