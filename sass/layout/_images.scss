@@ -1,0 +1,13 @@
+$image-size: 24rem;
+
+.images {
+    height: $image-size;
+    display: flex;
+    overflow-x: hidden;
+
+    &__image {
+        display: block;
+        height: $image-size;
+        width: $image-size;
+    }
+}
