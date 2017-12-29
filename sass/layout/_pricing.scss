@@ -1,0 +1,91 @@
+@import '../abstract/_variables.scss';
+@import '../abstract/_mixins.scss';
+
+.pricing {  
+    @include section-box;
+    
+    &__title {
+        @include section-title-box;
+        &__text {
+            @include section-title;
+        }
+    }
+
+    &__container {
+        justify-content: center;
+        flex-basis: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+
+        &__one-box {
+            flex-basis: 25.5rem;
+            min-height: 39rem;
+            border-radius: 1.5rem;
+            border: 2px solid $color-primary;
+            text-align: center;
+            margin: 2rem 9rem;
+            
+            @media (max-width: $breakpoint-medium) {
+                margin: 2rem 3rem;
+            }
+
+            @media (max-width: $breakpoint-small) {
+                margin: 2rem 0rem;
+            }
+            
+
+            &__title {
+                font-size: 2.6rem;
+                margin: 2.5rem auto 0 auto;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-decoration: underline;
+                
+                @media (max-width: $breakpoint-small) {
+                    font-size: 2.2rem;
+                }
+            }
+
+            &__subtitle {
+                font-size: 1.56rem;
+                margin: 0.7rem auto 0 auto;
+            }
+
+            &__price {
+                background-color: $color-primary;
+                display: flex;
+                flex-basis: 100%;
+                height: 7rem;
+                margin-top: 1.6rem;
+
+                &__text {
+                    margin: auto;
+                    font-size: 2.17rem;
+                    color: $color-text-invert;
+                    &__bold {
+                        font-size: 2.92rem;
+                        font-weight: 400;
+                    }
+
+                    @media (max-width: $breakpoint-small) {
+                        font-size: 1.9rem;
+                        &__bold {
+                            font-size: 2.3rem;
+                        }
+                    }
+                }
+            }
+
+            &__details {
+                margin-top: 3rem;
+                padding: 0 1rem;
+
+                &__text {
+                    font-size: 1.4rem;
+                    line-height: 2.3rem;
+                }
+            }
+        }
+    }
+}

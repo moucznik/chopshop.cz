@@ -1,29 +1,25 @@
 @import '../abstract/_variables.scss';
 @import '../abstract/_mixins.scss';
+
 .reviews {
-    margin: 0 auto;
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
+    @include section-box;
     padding: 6rem 0;
     text-align: center;
-    
+
     &__title {
-        min-height: 4rem;
-        margin: 0 auto 1.3rem auto;
-        width: 100%;
+        @include section-title-box;
+
         &__text {
             @include section-title;
-            text-align: center;
         }
     }
+
     &__review {
         margin: 0 auto;
         flex: 1;
         max-width: 38rem;
         display: flex;
         flex-wrap: wrap;
-
         &__box__first,
         &__box__second {
             display: flex;

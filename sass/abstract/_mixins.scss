@@ -17,7 +17,21 @@
     }
 }
 
-@mixin section-title {  
+@mixin section-box {
+    margin: 0 auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+}
+
+@mixin section-title-box {
+    min-height: 3rem;
+    margin: 0 auto 1.3rem auto;
+    flex-basis: 100%;
+}
+
+@mixin section-title {
     padding-top: 2rem;
     text-align: center;
     font-size: 2.6rem;

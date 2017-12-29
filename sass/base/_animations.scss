@@ -4,6 +4,12 @@
     animation-duration: 1.6s;
 }
 
+.animate-from-bottom-slower {
+    animation-name: appear-from-bottom;
+    animation-timing-function: ease-out;
+    animation-duration: 2.6s;
+}
+
 @keyframes appear-from-bottom {
     0% {
         opacity: 0;
