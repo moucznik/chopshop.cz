@@ -12,8 +12,9 @@
     font-size: 4.2rem;
     text-align: center;
     color: $color-text-darker;
+
     @media (max-width: $breakpoint-extra-small) {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
 }
 
