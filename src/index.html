@@ -43,6 +43,8 @@
     </div>
     <!-- end of hero -->
 
+
+    <!-- start of pricing -->
     <div class="pricing animate-from-bottom-slower">
         <div class="container">
             <div class="pricing__title">
@@ -124,10 +126,39 @@
                 </div>
                 <!-- end of pricing__one-box -->
             </div>
-
         </div>
     </div>
+    <!-- end of pricing -->
 
+    <!-- start of reservation -->
+    <div class="reservation">
+        <div class="container">
+            <div class="reservation__title">
+                <h2 class="reservation__title__text"> Rezervuj si termín online </h2>
+            </div>
+            <div class="reservation__button">
+                <div class="btn btn__center">
+                    <a href="#/obejdnat_se" class="btn__link">
+                        <p class="btn__text"> Objednat se</p>
+                    </a>
+                </div>
+            </div>
+            <div class="reservation__contact">
+                <h3 class="reservation__contact__text"> pro info volej
+                    <br>
+                    <b class="reservation__contact__text__bold"> 735 549 319</b>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- end of reservation -->
+
+    <div class="map">
+        <div id="map"></div>
+
+    </div>
+
+    <!-- start of reviews -->
     <div class="reviews">
         <div class="container">
             <div class="reviews__title">
@@ -149,7 +180,7 @@
             <p class="reviews__name__text"> Filip Urban </p>
         </div>
     </div>
-    </div>
+    <!-- end of reviews -->
 
     <!-- start of footer -->
     <div class="footer">
@@ -173,6 +204,142 @@
         </span>
     </div>
     <!-- end of foter -->
+
+    <!-- google maps -->
+    <script>
+        function initMap() {
+            var chopShop = {
+                lat: 49.204208,
+                lng: 16.564848
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: chopShop,
+                styles: [{
+                        "featureType": "all",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#ffffff"
+                        }]
+                    },
+                    {
+                        "featureType": "all",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                                "color": "#000000"
+                            },
+                            {
+                                "lightness": 13
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#144b53"
+                            },
+                            {
+                                "lightness": 14
+                            },
+                            {
+                                "weight": 1.4
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{
+                            "color": "#08304b"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "color": "#0c4152"
+                            },
+                            {
+                                "lightness": 5
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#0b434f"
+                            },
+                            {
+                                "lightness": 25
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry.stroke",
+                        "stylers": [{
+                                "color": "#0b3d51"
+                            },
+                            {
+                                "lightness": 16
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{
+                            "color": "#146474"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{
+                            "color": "#021019"
+                        }]
+                    }
+                ],
+            });
+            var marker = new google.maps.Marker({
+                position: chopShop,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfpvsXTbJl6Ncsb_mOwEZ44KpVXHftWCg&callback=initMap">
+    </script>
+
 </body>
 
 </html>

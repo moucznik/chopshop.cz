@@ -1,0 +1,10 @@
+@import '../abstract/_variables.scss';
+@import '../abstract/_mixins.scss';
+
+.map {
+    //google id for styling map
+    #map {
+        height: 400px;
+        width: 100%;
+    }
+}
