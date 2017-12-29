@@ -4,7 +4,7 @@
   "description": "Landing page for a chopshop in Brno",
   "main": "index.hmtl",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss src/css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss src/css/style.css && node-sass sass/main.scss src/css/style.css -w",
     "run:server": "serve src",
     "start": "run-p run:server compile:sass"
   },
