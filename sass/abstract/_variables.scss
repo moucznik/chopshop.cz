@@ -7,6 +7,7 @@ $color-text-darker: #222222;
 $color-section-title-dark: #424141;
 
 //page widths
+$max-screen-width: 123rem;
 $min-width: 28rem;
 $base-width: 48rem;
 
@@ -15,3 +16,7 @@ $breakpoint-large: 1250px;
 $breakpoint-medium: 800px;
 $breakpoint-small: 450px;
 $breakpoint-extra-small: 350px;
+
+// image-size
+$image-size: 21.7rem;
+$number-of-images: 14;

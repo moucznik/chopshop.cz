@@ -1,13 +1,31 @@
-$image-size: 24rem;
+@import '../abstract/_variables.scss';
 
 .images {
-    height: $image-size;
-    display: flex;
-    overflow-x: hidden;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
 
-    &__image {
-        display: block;
+    &__container {
         height: $image-size;
-        width: $image-size;
+        display: block;
+        width: $number-of-images * $image-size;
+        overflow: hidden;
+
+        &__box {
+            height: $image-size;
+            width: $image-size;
+            background-color: $color-footer-background;
+            overflow: hidden;
+            float: left;
+            display: block;
+            position: relative;
+            text-align: center;
+
+            &__image {
+                height: 100%;
+                vertical-align: middle;
+                opacity: 0.7;
+            }
+        }
     }
 }

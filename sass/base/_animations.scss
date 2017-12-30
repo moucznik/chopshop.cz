@@ -1,3 +1,5 @@
+@import '../abstract/_variables.scss';
+
 .animate-from-bottom {
     animation-name: appear-from-bottom;
     animation-timing-function: ease-out;
@@ -8,6 +10,12 @@
     animation-name: appear-from-bottom;
     animation-timing-function: ease-out;
     animation-duration: 2.6s;
+}
+
+.animate-slide-images {
+    animation-name: slide-images;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes appear-from-bottom {
@@ -21,5 +29,64 @@
     100% {
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+
+@keyframes slide-images {
+    0% {
+        transform: translateX(0);
+    }
+    19% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-$image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    39% {
+        transform: translateX(-$image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    40% {
+        transform: translateX(-2* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    59% {
+        transform: translateX(-2* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    60% {
+        transform: translateX(-3* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    79% {
+        transform: translateX(-3* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    80% {
+        transform: translateX(-4* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    93% {
+        transform: translateX(-4* $image-size);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
+    }
+    94% {
+        transform: translateX(-5* $image-size);
+        transition-timing-function: ease-out;
+    }
+    100% {
+        transform: translate(0);
+        transition: 0.25s;
+        transition-timing-function: ease-out;
     }
 }
