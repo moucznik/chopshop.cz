@@ -3,11 +3,15 @@
 @import "layout/_grid.scss";
 @import "base/_animations.scss";
 @import "base/_typography.scss";
+
+//share component styles
 @import "components/_button.scss";
-@import "layout/_footer.scss";
-@import "layout/_review.scss";
-@import "layout/_pricing.scss";
-// header 
+
+// section layout styles
 @import "layout/_header.scss";
-//hero
 @import "layout/_hero.scss";
+@import "layout/_pricing.scss";
+@import "layout/_reservation.scss";
+@import "layout/_map.scss";
+@import "layout/_review.scss";
+@import "layout/_footer.scss";
