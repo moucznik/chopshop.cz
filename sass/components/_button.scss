@@ -4,7 +4,9 @@
     max-width: 15rem;
     min-height: 3.3rem;
     display: flex;
-    border-radius: 1.4rem;
+    flex: 1;
+    border-radius: 1.7rem;
+
     &__link {
         margin: auto;
         text-decoration: none;
