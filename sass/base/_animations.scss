@@ -1,3 +1,5 @@
+@import '../abstract/_variables.scss';
+
 .animate-from-bottom {
     animation-name: appear-from-bottom;
     animation-timing-function: ease-out;
@@ -8,6 +10,10 @@
     animation-name: appear-from-bottom;
     animation-timing-function: ease-out;
     animation-duration: 2.6s;
+}
+
+.animate-slide-images {
+    animation: slide-images 25s ease-out infinite;
 }
 
 @keyframes appear-from-bottom {
@@ -21,5 +27,51 @@
     100% {
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+
+@keyframes slide-images {
+    19% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-$image-size);
+        transition: 0.25s;
+    }
+    39% {
+        transform: translateX(-$image-size);
+        transition: 0.25s;
+    }
+    40% {
+        transform: translateX(-2* $image-size);
+        transition: 0.25s;
+    }
+    59% {
+        transform: translateX(-2* $image-size);
+        transition: 0.25s;
+    }
+    60% {
+        transform: translateX(-3* $image-size);
+        transition: 0.25s;
+    }
+    79% {
+        transform: translateX(-3* $image-size);
+        transition: 0.25s;
+    }
+    80% {
+        transform: translateX(-4* $image-size);
+        transition: 0.25s;
+    }
+    93% {
+        transform: translateX(-4* $image-size);
+        transition: 0.25s;
+    }
+    94% {
+        transform: translateX(-5* $image-size);
+    }
+    100% {
+        transform: translate(0);
+        transition: 0.25s;
     }
 }

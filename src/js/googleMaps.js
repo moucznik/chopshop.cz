@@ -1,9 +1,9 @@
         function initMap() {
-            const chopShop = {
+            var chopShop = {
                 lat: 49.204208,
                 lng: 16.564848
             };
-            const map = new google.maps.Map(document.getElementById('map'), {
+            var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
                 center: chopShop,
                 styles: [{
@@ -122,7 +122,7 @@
                     }
                 ],
             });
-            const marker = new google.maps.Marker({
+            var marker = new google.maps.Marker({
                 position: chopShop,
                 map: map
             });
