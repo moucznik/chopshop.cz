@@ -56,10 +56,10 @@
                 <!-- start of pricing__one-box -->
                 <div class="pricing__container__one-box">
                     <h3 class="pricing__container__one-box__title"> Střih </h3>
-                    <p class="pricing__container__one-box__subtitle"> 90 min. </p>
+                    <p class="pricing__container__one-box__subtitle"> 60 min. </p>
                     <div class="pricing__container__one-box__price">
                         <p class="pricing__container__one-box__price__text"> CZK
-                            <b class="pricing__container__one-box__price__text__bold"> 500,-</b>
+                            <b class="pricing__container__one-box__price__text__bold"> 400,-</b>
                         </p>
                     </div>
                     <div class="pricing__container__one-box__details">
@@ -88,44 +88,7 @@
                     </div>
                 </div>
                 <!-- end of pricing__one-box -->
-            </div>
 
-            <div class="pricing__container">
-                <!-- start of pricing__one-box -->
-                <div class="pricing__container__one-box">
-                    <h3 class="pricing__container__one-box__title"> Krátký střih </h3>
-                    <p class="pricing__container__one-box__subtitle"> 60 min. </p>
-                    <div class="pricing__container__one-box__price">
-                        <p class="pricing__container__one-box__price__text"> CZK
-                            <b class="pricing__container__one-box__price__text__bold"> 400,-</b>
-                        </p>
-                    </div>
-                    <div class="pricing__container__one-box__details">
-                        <p class="pricing__container__one-box__details__text"> Střih + mytí vlasů </p>
-                        <p class="pricing__container__one-box__details__text"> Zaholení kontur břitvou </p>
-                        <p class="pricing__container__one-box__details__text"> Vysušení a styling dle výběru </p>
-                        <p class="pricing__container__one-box__details__text"> + drink zdarma </p>
-                    </div>
-                </div>
-                <!-- end of pricing__one-box -->
-
-                <!-- start of pricing__one-box -->
-                <div class="pricing__container__one-box">
-                    <h3 class="pricing__container__one-box__title"> Krátký vous </h3>
-                    <p class="pricing__container__one-box__subtitle"> 30 min. </p>
-                    <div class="pricing__container__one-box__price">
-                        <p class="pricing__container__one-box__price__text"> CZK
-                            <b class="pricing__container__one-box__price__text__bold"> 200,-</b>
-                        </p>
-                    </div>
-                    <div class="pricing__container__one-box__details">
-                        <p class="pricing__container__one-box__details__text"> Kompletní holení </p>
-                        <p class="pricing__container__one-box__details__text"> včetně beardtrim a hottowel </p>
-                        <p class="pricing__container__one-box__details__text"> Kompletní styling dle výběru </p>
-                        <p class="pricing__container__one-box__details__text"> + drink zdarma </p>
-                    </div>
-                </div>
-                <!-- end of pricing__one-box -->
             </div>
         </div>
     </div>
@@ -155,7 +118,6 @@
 
     <div class="map">
         <div id="map"></div>
-
     </div>
 
     <!-- start of reviews -->
@@ -175,9 +137,9 @@
                     <img src="./img/quote-right.png" class="reviews__review__box__second__image" alt="quote2">
                 </div>
             </div>
-        </div>
-        <div class="reviews__name">
-            <p class="reviews__name__text"> Filip Urban </p>
+            <div class="reviews__name">
+                <p class="reviews__name__text"> Filip Urban </p>
+            </div>
         </div>
     </div>
     <!-- start of review -->
@@ -235,16 +197,27 @@
     <div class="footer">
         <div class="footer__items">
             <div class="footer__items__item">
-                <img class="footer__items__item__image" src="./img/ff.png" alt="fb">
-                <a class="footer__items__item__text" href="https://www.facebook.com/ChopShop8/">facebook</a>
+                <a class="footer__items__item__link" href="https://www.facebook.com/ChopShop8/">
+                    <img class="footer__items__item__link__image" src="./img/ff.png" alt="fb">
+                    <p class="footer__items__item__link__text"> facebook </p>
+                </a>
             </div>
             <div class="footer__items__item">
-                <img class="footer__items__item__image" src="./img/ig.png" alt="instagram">
-                <a class="footer__items__item__text" href="https://www.instagram.com/chop_shop8">instagram</a>
+                <div class="footer__items__item">
+                    <a class="footer__items__item__link" href="https://www.instagram.com/chop_shop8">
+                        <img class="footer__items__item__link__image" src="./img/ig.png" alt="ig">
+                        <p class="footer__items__item__link__text"> instagram </p>
+                    </a>
+                </div>
             </div>
+            
             <div class="footer__items__item">
-                <img class="footer__items__item__image" src="./img/phone.png" alt="phone">
-                <a class="footer__items__item__text" href="tel:+420735549319">+420 735 549 319</a>
+                <div class="footer__items__item">
+                    <a class="footer__items__item__link" href="tel:+420735549319">
+                        <img class="footer__items__item__link__image" src="./img/phone.png" alt="phone">
+                        <p class="footer__items__item__link__text"> +420 735 549 319 </p>
+                    </a>
+                </div>
             </div>
         </div>
         <img class="footer__logo" src="./img/logo-white.png" alt="logo">
@@ -253,6 +226,7 @@
         </span>
     </div>
     <!-- end of foter -->
+
     <script type="text/javascript" src="js/googleMaps.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfpvsXTbJl6Ncsb_mOwEZ44KpVXHftWCg&callback=initMap">
     </script>

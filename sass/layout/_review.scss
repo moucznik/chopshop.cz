@@ -20,11 +20,13 @@
         max-width: 38rem;
         display: flex;
         flex-wrap: wrap;
+
         &__box__first,
         &__box__second {
             display: flex;
-            flex: 1;
+            flex-basis: 100%;
             justify-content: flex-start;
+
             &__image {
                 height: 2.5rem;
             }
