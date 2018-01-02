@@ -5,6 +5,7 @@
     <title>ChopShop - Barber Shop</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script id="reservanto-widget-script" type="text/javascript" src="//booking.reservanto.cz/Script/reservanto-script.js?id=13085"></script>
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                     </h1>
                     <p class="hero__text__box__text-basic text__center"> Privátní Club - holičství s vlastní komunitou. Přijď vyzkoušet a přidej se i ty.</p>
                     <div class="btn btn__center hero__text__box__button animate-from-bottom">
-                        <a href="#/obejdnat_se" class="btn__link">
+                        <a href="#objednat_se" class="btn__link">
                             <p class="btn__text"> Objednat se</p>
                         </a>
                     </div>
@@ -131,17 +132,16 @@
     <!-- end of pricing -->
 
     <!-- start of reservation -->
-    <div class="reservation">
+    <div class="reservation" id="objednat_se">
         <div class="container">
             <div class="reservation__title">
                 <h2 class="reservation__title__text"> Rezervuj si termín online </h2>
             </div>
             <div class="reservation__button">
-                <div class="btn btn__center">
-                    <a href="#/obejdnat_se" class="btn__link">
-                        <p class="btn__text"> Objednat se</p>
-                    </a>
-                </div>
+                <!-- inserted reservanto code -->
+                <div class="reservanto-widget" data-id="13085" data-text="Rezervovat" data-color-text="#fffff" data-color-text-shadow="transparent"
+                    data-color-bg="#410000" data-color-bg-hover="#5c0707" data-color-boxshadow="transparent" data-segment="1011"></div>
+                <!-- end of inserted reservanto code -->
             </div>
             <div class="reservation__contact">
                 <h3 class="reservation__contact__text"> pro info volej

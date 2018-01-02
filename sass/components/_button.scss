@@ -1,12 +1,12 @@
 @import "../abstract/_variables.scss";
 .btn {
     background-color: $color-primary;
-    max-width: 15rem;
+    max-width: 17rem;
     min-height: 3.3rem;
     display: flex;
     flex: 1;
     border-radius: 1.7rem;
-
+    justify-content: center;
     &__link {
         margin: auto;
         text-decoration: none;
@@ -17,5 +17,26 @@
     }
     &__center {
         margin: auto;
+    }
+
+    &:hover {
+        background-color: $color-button-background-hover;
+    }
+}
+
+// reservation button
+.reservanto-widget {
+    display: flex;
+    .reservanto-button {
+        max-width: 15rem;
+        min-height: 3.05rem;
+        border-radius: 1.7rem;
+        display: flex;
+    }
+    a {
+        font-size: 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        padding: 1.25rem 4.55rem 0 4.55rem;
     }
 }
