@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Landing page for a chopshop in Brno",
   "main": "index.hmtl",
+  "homepage": "http://chopshop.cz/",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss src/css/style.css && node-sass sass/main.scss src/css/style.css -w",
     "run:server": "serve src",
@@ -11,7 +12,10 @@
   "keywords": [
     "chopshop"
   ],
-  "author": "Jiri Mouka, Ondrej Janosik",
+  "contributors": [
+    "Jiri Mouka <mouka5@seznam.cz>",
+    "Ondrej Janosik <ondrej.janosik42@gmail.com>"
+  ],
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.7.2"
