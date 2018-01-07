@@ -5,9 +5,8 @@
   "main": "index.hmtl",
   "homepage": "http://chopshop.cz/",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss src/css/style.css && node-sass sass/main.scss src/css/style.css -w",
-    "run:server": "serve src",
-    "start": "run-p run:server compile:sass"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [
     "chopshop"
@@ -18,7 +17,12 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "autoprefixer": "^7.2.4",
+    "cssnano": "^3.10.0",
+    "html-minifier": "^3.5.8",
+    "postcss-modules": "^1.1.0",
+    "posthtml-img-autosize": "^0.1.1"
   },
   "dependencies": {}
 }
