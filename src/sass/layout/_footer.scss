@@ -4,7 +4,7 @@
     background-color: $color-footer-background;
     color: $color-text-invert;
     flex-basis: 100%;
-    padding: 9rem 0 12rem 0;
+    padding: 9rem 0 0rem 0;
 
     &__items {
         flex-basis: 100%;
@@ -52,13 +52,23 @@
 
     &__logo {
         display: block;
-        margin: 10rem auto 3rem auto;
+        margin: 7rem auto 3rem auto;
     }
 
     &__address {
         display: block;
         font-size: 1.3rem;
         text-align: center;
+    }
+
+    &__creators {
+        display: block;
+        font-size: 1rem;
+        opacity: 0.7;
+        text-align: center;
+        padding: 2rem 0 1.6rem 0;
+        color: $background-light;
+        letter-spacing: 0.05rem;
     }
     
 }
