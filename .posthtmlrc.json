@@ -1,8 +1,8 @@
 {
-    "plugins": {
-      "posthtml-img-autosize": {
-        "root": "./src/img"
-      },
-      "html-minifier": true
-    }
+  "plugins": {
+    "posthtml-img-autosize": {
+      "root": "./src/img"
+    },
+    "html-minifier": true
   }
+}

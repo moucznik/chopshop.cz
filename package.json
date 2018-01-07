@@ -17,13 +17,12 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^4.7.2"
-  },
-  "dependencies": {
+    "node-sass": "^4.7.2",
     "autoprefixer": "^7.2.4",
     "cssnano": "^3.10.0",
     "html-minifier": "^3.5.8",
     "postcss-modules": "^1.1.0",
     "posthtml-img-autosize": "^0.1.1"
-  }
+  },
+  "dependencies": {}
 }
